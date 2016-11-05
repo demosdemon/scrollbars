@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5D66F1491DCE230C00F949C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D66F1481DCE230C00F949C0 /* main.m */; };
+		5D66F1511DCE236C00F949C0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D66F1501DCE236C00F949C0 /* CoreFoundation.framework */; };
+		5D66F1531DCE330100F949C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D66F1521DCE330100F949C0 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		5D66F1451DCE230C00F949C0 /* scrollbars */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = scrollbars; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D66F1481DCE230C00F949C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5D66F1501DCE236C00F949C0 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		5D66F1521DCE330100F949C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D66F1531DCE330100F949C0 /* Foundation.framework in Frameworks */,
+				5D66F1511DCE236C00F949C0 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +49,7 @@
 			children = (
 				5D66F1471DCE230C00F949C0 /* scrollbars */,
 				5D66F1461DCE230C00F949C0 /* Products */,
+				5D66F14F1DCE236C00F949C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +67,15 @@
 				5D66F1481DCE230C00F949C0 /* main.m */,
 			);
 			path = scrollbars;
+			sourceTree = "<group>";
+		};
+		5D66F14F1DCE236C00F949C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D66F1521DCE330100F949C0 /* Foundation.framework */,
+				5D66F1501DCE236C00F949C0 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,7 +233,9 @@
 		5D66F14D1DCE230C00F949C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = 27B2VM4KQX;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -225,7 +243,9 @@
 		5D66F14E1DCE230C00F949C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = 27B2VM4KQX;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
